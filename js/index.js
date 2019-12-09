@@ -58,5 +58,8 @@ headerImg.setAttribute('src', siteContent["cta"]["img-src"])
 const newButton = document.getElementsByTagName("button");
 newButton[0].textContent = siteContent["cta"]["button"]
 
-const newMain = document.getElementsByClassName("top-content");
+const newMain = document.getElementsByClassName("text-content");
 newMain[0].textContent = siteContent["main-content"]["features-h4"]
+newMain[1].textContent = siteContent["main-content"]["features-content"]
+
+console.log(newMain);
