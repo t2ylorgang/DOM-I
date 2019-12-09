@@ -58,8 +58,30 @@ headerImg.setAttribute('src', siteContent["cta"]["img-src"])
 const newButton = document.getElementsByTagName("button");
 newButton[0].textContent = siteContent["cta"]["button"]
 
-const newMain = document.getElementsByClassName("text-content");
-newMain[0].textContent = siteContent["main-content"]["features-h4"]
-newMain[1].textContent = siteContent["main-content"]["features-content"]
+const headingFour = document.querySelectorAll(".text-content h4");
+headingFour[0].textContent = siteContent["main-content"]["features-h4"]
+headingFour[1].textContent = siteContent["main-content"]["about-h4"]
+headingFour[2].textContent = siteContent["main-content"]["services-h4"]
+headingFour[3].textContent = siteContent["main-content"]["product-h4"]
+headingFour[4].textContent = siteContent["main-content"]["vision-h4"]
 
-console.log(newMain);
+const mainP = document.querySelectorAll(".text-content p");
+mainP[0].textContent = siteContent["main-content"]["features-content"]
+mainP[1].textContent = siteContent["main-content"]["about-content"]
+mainP[2].textContent = siteContent["main-content"]["services-content"]
+mainP[3].textContent = siteContent["main-content"]["product-content"]
+mainP[4].textContent = siteContent["main-content"]["vision-content"]
+
+const midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const contact = document.querySelectorAll(".contact h4")
+contact[0].textContent = siteContent["contact"]["contact-h4"]
+
+const contactSec = document.querySelectorAll(".contact p")
+contactSec[0].textContent = siteContent["contact"]["address"]
+contactSec[1].textContent = siteContent["contact"]["phone"]
+contactSec[2].textContent = siteContent["contact"]["email"]
+
+const newFooter = document.getElementsByTagName("footer");
+newFooter[0].textContent = siteContent["footer"]["copyright"]
