@@ -85,3 +85,19 @@ contactSec[2].textContent = siteContent["contact"]["email"]
 
 const newFooter = document.getElementsByTagName("footer");
 newFooter[0].textContent = siteContent["footer"]["copyright"]
+
+const superNav = document.querySelector("nav");
+
+const newEl = document.createElement("a");
+newEl.textContent = "Reviews";
+
+const newEl1 = document.createElement("a");
+newEl1.textContent = "Recipes";
+
+superNav.appendChild(newEl);
+superNav.prepend(newEl1);
+
+const greenNav = document.querySelectorAll("a");
+greenNav.forEach(el => {
+  el.style.color = "green"
+})
